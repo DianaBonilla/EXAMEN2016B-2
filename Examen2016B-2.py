@@ -59,9 +59,9 @@ print("\n3. Ejercicio 3")
 opcion=int(input("Ingrese una opcion (Presione enter para salir): "))
 if opcion == 1:
     ejercicio1()
-else if opcion == 2:
+elif opcion == 2:
     ejercicio2()
-else if opcion == 3:
+elif opcion == 3:
     ejercicio3()
 else:
     print("Opcion Incorrecta..!!")
@@ -74,9 +74,9 @@ while opcion != "":
     opcion=int(input("Ingrese una opcion (Presione enter para salir): "))
     if opcion == 1:
         ejercicio1()
-    else if opcion == 2:
+    elif opcion == 2:
         ejercicio2()
-    else if opcion == 3:
+    elif opcion == 3:
         ejercicio3()
     else:
         print("Opcion Incorrecta..!!")
