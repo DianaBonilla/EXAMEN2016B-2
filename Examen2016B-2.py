@@ -51,12 +51,36 @@ def leertxt_ejercicio2():
 def ejercicio1():
     def crear():
         a=open('nombre.txt','w')
+        a=open('nombre.txt','a')
+        a1=open('nombres1024KB.txt','w')
         a.write('Bonilla Valdivieso Diana Estefania \n')
         a.write('Carrillo Morocho Jessica Vanessa \n')
         a.write('Osorio Gonzalez Edison Santiago \n')
         a.write('Sanchez Hernandez Jordan Sebastian \n')
         a.write('Hernandez Alamgro Edison David \n')
         a.close()
+        a1.close()
+
+    def repetir100():
+        a=open('nombre.txt','w')
+        for i in range(600):
+            a.write('Bonilla Valdivieso Diana Estefania\n')
+            a.write('Carrillo Morocho Jessica Vanessa\n')
+            a.write('Hernandez Almagro Edison David\n')
+            a.write('Osorio Gonzales Edison Santiago\n')
+            a.write('Sanchez Hernandez Jordan Sebastian\n')
+        a.close()
+    
+    def repetir1024():
+        a1=open('nombres.txt','w')
+        a1=open('nombres1024KB.txt','a')
+        for i in range(6189):
+            a1.write('Bonilla Valdivieso Diana Estefania\n')
+            a1.write('Carrillo Morocho Jessica Vanessa\n')
+            a1.write('Hernandez Almagro Edison David\n')
+            a1.write('Osorio Gonzales Edison Santiago\n')
+            a1.write('Sanchez Hernandez Jordan Sebastian\n')
+        a1.close()
 
     def leer():
         a=open('nombre.txt','r')
@@ -66,6 +90,12 @@ def ejercicio1():
             linea=a.readline()
         a.close()
     print("")
+
+    def main():
+        crear()
+        leer()
+        repetir100()
+        repetir1024()
 
 def ejercicio2():
     print("\tEjercicio 2")
