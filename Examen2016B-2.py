@@ -49,7 +49,22 @@ def leertxt_ejercicio2():
     archi.close()
 
 def ejercicio1():
-    ##Agregar Ejercicio 1...!!
+    def crear():
+        a=open('nombre.txt','w')
+        a.write('Bonilla Valdivieso Diana Estefania \n')
+        a.write('Carrillo Morocho Jessica Vanessa \n')
+        a.write('Osorio Gonzalez Edison Santiago \n')
+        a.write('Sanchez Hernandez Jordan Sebastian \n')
+        a.write('Hernandez Alamgro Edison David \n')
+        a.close()
+
+    def leer():
+        a=open('nombre.txt','r')
+        linea=a.readline()
+        while linea !='':
+            print(linea)
+            linea=a.readline()
+        a.close()
     print("")
 
 def ejercicio2():
