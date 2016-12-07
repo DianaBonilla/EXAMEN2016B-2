@@ -11,7 +11,7 @@ def leertxt_ejercicio2():
     tiempo=0
 ##    repeticion=0
     nombre='Jordan'
-    archi=open('nombres.txt','r')
+    archi=open('nombre.txt','r')
     inicio=time()
 ##    linea=archi.readline()
 ##    cadena=linea.split(' ')
@@ -83,19 +83,19 @@ def ejercicio1():
         a1.close()
 
     def leer():
-        a=open('nombre.txt','r')
-        linea=a.readline()
+        a1=open('nombre.txt','r')
+        linea=a1.readline()
         while linea !='':
             print(linea)
-            linea=a.readline()
-        a.close()
+            linea=a1.readline()
+        a1.close()
     print("")
 
-    def main():
-        crear()
-        leer()
-        repetir100()
-        repetir1024()
+##    def main():
+    crear()
+    repetir100()
+    repetir1024()
+    leer()
 
 def ejercicio2():
     print("\tEjercicio 2")
@@ -103,8 +103,31 @@ def ejercicio2():
     leertxt_ejercicio2()
 
 def ejercicio3():
-    ##Agregar ejercicio 3..!!
-    print("")
+    print("Calculo del volumen de una piscina")
+    print("1. Piscina rectangular")
+    print("2. Picina elíptica")
+    print("3. Piscina circula")
+    opcion = int(input("Ingrese la opcion que desea: "))
+    pi=3.1416
+    if opcion == 1:
+        a = float(input("Ingrese el valor del primer lado: "))
+        b = float(input("Ingrese el valor del segundo lado: "))
+        h = float(input("Ingrese el valor de la altura: "))
+        volumen = a * b * h
+        print("El volumen de la piscina rectangular es: ",volumen,"cm3")
+    elif opcion == 2:
+        a=float(input("Ingrese el valor semieje MAYOR: "))
+        b=float(input("Ingrese el valor del semieje MENOR: "))
+        c=float(input("Ingrese la altura del rectangulo: "))
+        area=pi*a*b
+        volumen=area*c
+        print("El volumen de la piscina eliptica es: ",round(volumen,2),"cm3")
+    elif opcion == 3:
+        r = float(input("Ingrese el valor del radio del circulo: "))
+        area = pi * r**2
+        h = float(input("Ingrese la altura del rectangulo: "))
+        volumen = area * h
+        print("El volumen de la piscina circular es: ",round(volumen,3),"cm3")
 
 print("\tExamen Bimestral")
 print("Bonilla Diana")
@@ -138,6 +161,7 @@ while opcion != "":
         ejercicio2()
     elif opcion == 3:
         ejercicio3()
+        
     else:
         print("Opcion Incorrecta..!!")
     

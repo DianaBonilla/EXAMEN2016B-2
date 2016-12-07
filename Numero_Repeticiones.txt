@@ -1,2 +1,2 @@
-El numero de repeticiones es: 6189
-El tiempo transcurrido fue: 0.11500668525695801
+El numero de repeticiones es: 600
+El tiempo transcurrido fue: 0.031001806259155273
