@@ -8,3 +8,9 @@ Calculo del volumen de la piscina rectangular y circular
 Jordan Sanchez (JordanJssh).- Realizacion del menu repetitivo, y realizacion del ejercicio 2 (Tiempo de ejecucion, union del archivo del ejercicio 1 y conteo de palabras)
 
 Jessica Carrillo(JessicaCarrillo).-Realizacion de la segunda parte del ejecicio1 1024KB y aanadir al menu el ejercicio 
+
+David Hernandez   EdisonHernandez
+Realizacion del ejercicio 3 y colaboracion del ejercicio2
+Calculo del volumen de la piscina eliptica y colaboracion en el conteo de la repeticiones de los nombres del
+ejercicio2.
+
