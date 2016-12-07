@@ -9,29 +9,44 @@ def creartxt_ejercicio2():
 
 def leertxt_ejercicio2():
     tiempo=0
-    repeticion=0
+##    repeticion=0
     nombre='Jordan'
     archi=open('nombres.txt','r')
     inicio=time()
+##    linea=archi.readline()
+##    cadena=linea.split(' ')
+##    palabras=len(cadena)
+##    for i in range(palabras):
+##        if palabras[i]==nombre:
+##            repeticion=repeticion+1
+##    while linea != "":
+##        linea=archi.readline()
+##        cadena=linea.split(' ')
+##        palabras=len(palabras)
+##        for i in range(palabras):
+##            if palabras[i]==nombre:
+##                repeticion=repet
+##                icion+1
+##    fin=time()
+##    archi.close()
+    cont=0
+    numero=0
+##    archi=open(archivo,'r')
     linea=archi.readline()
-    cadena=linea.split(' ')
-    palabras=len(cadena-1)
-    for i in range(palabras):
-        if palabras[i]==nombre:
-            repeticion=repeticion+1
-    while linea != "":
+    #print(linea.count(palabra))
+    while linea !="":
+        cont+=linea.count(nombre)
+        #print (linea)
         linea=archi.readline()
-        cadena=linea.split(' ')
-        palabras=len(palabras)
-        for i in range(palabras):
-            if palabras[i]==nombre:
-                repeticion=repeticion+1
+    numero=cont
+    print("La palabra ingresada: ",nombre," se repite: ",numero," veces en el texto")
     fin=time()
-    archi.close()
+##    archi.close()
     tiempo=fin-inicio
     archi=open('Numero_Repeticiones.txt','a')
-    archi.write('El numero de repeticiones es: ', str(repeticion))
-    archi.write('\nEl tiempo transcurrido fue: ', str(tiempo))
+    archi.write('El numero de repeticiones es: '+ str(numero))
+    archi.write('\nEl tiempo transcurrido fue: '+ str(tiempo))
+    archi.close()
 
 def ejercicio1():
     ##Agregar Ejercicio 1...!!

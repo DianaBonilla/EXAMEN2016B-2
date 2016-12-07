@@ -1,0 +1,2 @@
+El numero de repeticiones es: 6189
+El tiempo transcurrido fue: 0.057003021240234375
