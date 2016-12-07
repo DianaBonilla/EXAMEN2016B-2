@@ -11,7 +11,7 @@ def leertxt_ejercicio2():
     tiempo=0
 ##    repeticion=0
     nombre='Jordan'
-    archi=open('nombre.txt','r')
+    archi=open('nombres1024KB.txt','r')
     inicio=time()
 ##    linea=archi.readline()
 ##    cadena=linea.split(' ')
